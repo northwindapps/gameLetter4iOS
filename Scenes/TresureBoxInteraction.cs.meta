@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7e59521956e64cb28fe2c88710d83de
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dialogue: {instanceID: 0}
+  - chest_close: {fileID: 100000, guid: 4b1205a7235860c479fc94aefe26ebf1, type: 3}
+  - chest_open: {fileID: 1000014099110386, guid: e097dc1b761606040a141ca558e64088,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

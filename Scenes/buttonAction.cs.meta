@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e5edee59a71a44d7683d5f3e5e0beccc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Spinner: {fileID: 7612335640395761690, guid: 6e1b4811884da4d40b6042e8a8f8706b,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
