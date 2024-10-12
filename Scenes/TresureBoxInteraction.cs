@@ -23,7 +23,7 @@ public class TreasureBoxInteraction : MonoBehaviour
     void Update()
     {
         // Check if the player is near the treasure box and left mouse button is clicked
-        if (isPlayerNear && Input.GetMouseButtonDown(0)) // 0 for left mouse button
+        if (isPlayerNear) // 0 for left mouse button  && Input.GetMouseButtonDown(0)
         {
             OpenTreasureBox(); // Call the function to open the treasure box
         }

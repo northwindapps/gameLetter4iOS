@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private Rigidbody playerRigidbody;
     [SerializeField] private FixedJoystick joystick;
 
     [SerializeField] private float movespeed;
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        playerRigidbody = GetComponent<Rigidbody>();
     }
 
     // Start is called before the first frame update
@@ -24,6 +24,6 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         // Use the correct property name 'velocity' instead of 'valocity'
-        rigidbody.velocity = new Vector3(joystick.Horizontal * movespeed, rigidbody.velocity.y, joystick.Vertical * movespeed);
+        GetComponent<Rigidbody>().velocity = new Vector3(joystick.Horizontal * movespeed, playerRigidbody.velocity.y, joystick.Vertical * movespeed);
     }
 }
