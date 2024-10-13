@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class buttonAction : MonoBehaviour
 {
-    public GameObject Spinner1;
+    //public GameObject Spinner1;
 
     void Start()
     {
-        Spinner1.SetActive(false);
+        //Spinner1.SetActive(false);
     }
 
     public void OnButtonClick2()
@@ -19,7 +19,7 @@ public class buttonAction : MonoBehaviour
     public void SwitchScene()
     {
         Debug.Log("Switching Scene...");
-        Spinner1.SetActive(true);  // Show the spinner
+        //Spinner1.SetActive(true);  // Show the spinner
         //Spinner.StartSpinner(); // Start spinning
         SceneManager.LoadScene("SampleScene");
     }

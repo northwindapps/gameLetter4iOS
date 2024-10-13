@@ -58,7 +58,9 @@ public class Dialogue : MonoBehaviour
     {
         backgroundImage.gameObject.SetActive(true);
         textComponent.gameObject.SetActive(true);
-        textComponent.text = "Dear Reader,\n\nCongratulations!\n\nYou won.\n\nCustomize this message.\n\nBy Sender";
+        // Retrieving data
+        // string playerName = 
+        textComponent.text = PlayerPrefs.GetString("message");
 
         // Optionally, start the dialogue text or set the first line
         if (lines.Length > 0)
