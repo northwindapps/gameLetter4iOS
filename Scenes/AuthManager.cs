@@ -18,6 +18,10 @@ public class AuthManager : MonoBehaviour
     public TMP_Text warningRegisterText;
     public TMP_Text confirmRegisterText;
 
+    
+    [DllImport("__Internal")]
+    private static extern void SendMessageToJS();
+
     [DllImport("__Internal")]
     private static extern void AddUser(string email, string password, string message);
 
@@ -36,6 +40,7 @@ public class AuthManager : MonoBehaviour
         outputField.gameObject.SetActive(false);
         
         #if UNITY_WEBGL && !UNITY_EDITOR
+        SendMessageToJS();
         FindRecord();
         #endif
                         

@@ -12,9 +12,6 @@ public class Dialogue : MonoBehaviour
     private string userData;
 
     [DllImport("__Internal")]
-    private static extern void SendMessageToJS(string message);
-
-    [DllImport("__Internal")]
     private static extern void GetUsers();
     
 
@@ -28,7 +25,6 @@ public class Dialogue : MonoBehaviour
         
         #if UNITY_WEBGL && !UNITY_EDITOR
         // This sends a message to the WebGL context
-        SendMessageToJS("InitFirebase");
         GetUsers();
         #endif
     }
